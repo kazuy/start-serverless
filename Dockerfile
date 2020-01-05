@@ -5,3 +5,5 @@ USER node
 ENV NPM_CONFIG_PREFIX /home/node/.npm-global
 RUN npm install -g serverless
 ENV PATH $PATH:/home/node/.npm-global/bin
+
+WORKDIR /app
