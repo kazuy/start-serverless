@@ -1,5 +1,6 @@
 FROM node:13.5-alpine
-RUN apk update
+RUN apk update && \
+    apk add make gcc g++
 
 USER node
 ENV NPM_CONFIG_PREFIX /home/node/.npm-global
